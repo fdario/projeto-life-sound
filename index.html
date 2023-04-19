@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <nav class="cabecalho">
+    <nav>
         <img src="img/logo-pagina.png" alt="Logo da loja, escrito LIFE SOUND" id="logo">
         <div id="links-internos">
-            <p><a href="">Contato</a></p>
-            <p><a href="">Localização</a></p>
+            <p><a href="#redes">Contato</a></p>
+            <p><a href="#localizacao">Localização</a></p>
         </div>
     </nav>
     <section class="inicio">
@@ -28,7 +28,7 @@
             </div>
             <picture>
                 <source media="(max-width: 1200px )" srcset="img/acessorios-menor.png" type="image/png">
-                <img src="img/acessorios.png" alt="Imagem de acessótios automitivos">
+                <img src="img/acessorios.png" alt="Imagem de acessórios automitivos">
             </picture>
         </div>
     </section>
@@ -65,7 +65,7 @@
         <div class="paragrafo">
             <div class="texto">
                 <h2>Fazemos serviços de:</h2>
-                <ul class="lista-servicos">
+                <ul>
                     <li>Instalação de vidros e travas elétricas</li>
                     <li>Instalação de Películas</li>
                     <li>Alarmes, rastreadores e bloqueadores</li>
@@ -79,10 +79,10 @@
         </div>
     </section>
     <footer>
-        <div class="info-fim">
-            <p>Nossas redes</p>
-            <ul>
-                <li class="social">
+        <div class="info-fim" id="redes">
+            <p class="titulo-lista">Nossas redes</p>
+            <ul class="social">
+                <li>
                     <a href="https://www.instagram.com/lifesounddf/" target="_blank" id="link-redes">
                         <div class="redes">
                             <img src="img/instagram-icon.png" alt="Logo do instagram" class="mini-logo-instagram">
@@ -92,7 +92,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="social">
+                <li>
                     <a href="https://wa.me/5561996347011?text=Ol%C3%A1,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20algumas%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os."
                         target="_blank" id="link-redes">
                         <div class="redes">
@@ -105,10 +105,10 @@
                 </li>
             </ul>
         </div>
-        <div class="info-local">
-            <hr>
-            <label>Localização:</label>
-            <p>Qnp 34 Conjunto F, Loja 01</p>
+        <hr>
+        <div class="info-local" id="localizacao">
+            <p class="titulo-lista">Localização</p>
+            <p id="endereco">Qnp 34 Conjunto F, Loja 01</p>
             <a href="https://www.google.com.br/maps/place/Life+Sound/@-15.8510097,-48.1153143,18.46z/data=!4m6!3m5!1s0x935bcd0b819b0235:0x765fa57c0e7ff89b!8m2!3d-15.8511573!4d-48.1153545!16s%2Fg%2F11gdrvs4nr"
                 target="_blank" id="mapa">
                 <img src="img/local.png" alt="" id="local">

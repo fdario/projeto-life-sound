@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
+@keyframes escolha {
+    0% {
+        background-color: #00000000;
+    }
+    50% {
+    background-color: #484848;
+    }
+    100% {
+        background-color: #00000000;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,11 +30,7 @@ body {
     flex-direction: column;
 }
 
-.inicio {
-    background-image: linear-gradient(#000000, #00000080,  #00000000);
-}
-
-.cabecalho {
+nav {
     background-color: #060606;
     display: flex;
     align-items: center;
@@ -26,9 +38,19 @@ body {
     padding: 5px 5px 5px 5px;
 }
 
-.cabecalho p{
+nav p{
     font-family: 'Racing Sans One', cursive;
     font-size: 25px;
+}
+
+nav a {
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+:target {
+    animation-name: escolha;
+    animation-duration: 2s;
 }
 
 #links-internos{
@@ -63,7 +85,7 @@ body {
     width: 350px;
 }
 
-h1 {
+h1{
     font-size: 40px;
 }
 
@@ -78,7 +100,7 @@ h1 {
 }
 
 .conteudo {
-    background-image: linear-gradient(#00000000, #ededed , #ededed, #ededed, #ededed, #ededed,  #00000000);
+    background-image: linear-gradient(#00000000, #ededed, #ededed, #ededed, #ededed,  #00000000);
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -100,7 +122,6 @@ h1 {
 .texto {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     text-align: center;
     flex-direction: column;
 }
@@ -138,7 +159,10 @@ footer hr{
     display: none;
 }
 
-li.social {
+.info-fim{
+    border-radius: 15px;
+}
+.social {
     list-style: none;
 }
 
@@ -148,16 +172,13 @@ li.social {
 }
 
 div.info-local {
+    border-radius: 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.info-fim p {
-    font-size: 7vh;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+
 .social p {
     font-size: 4vh;
     margin-top: 5px;
@@ -171,12 +192,6 @@ div.info-local {
 .mini-logo-whatsapp {
     height: 30px;
     padding: 4px;
-}
-
-.lista-servicos{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .redes {
@@ -199,14 +214,17 @@ div.info-local {
     background-color: #484848;
 }
 
-label {
-    font-size: 30px;
-}
-
-.info-local p {
+#endereco {
+    font-family: sans-serif;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-family: sans-serif;
+}
+
+.titulo-lista {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 6vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -226,6 +244,6 @@ label {
     footer hr {
         display: block;
         margin: 5vh 0px;
-        width: 100%;
+        width: 85%;
     }
 }
