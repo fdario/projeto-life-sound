@@ -10,11 +10,12 @@ body {
     background-image: url(img/fundo.png);
     font-family: 'Racing Sans One', cursive;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 
 .inicio {
     background-image: linear-gradient(#000000, #00000080,  #00000000);
-    height: 110vh;
 }
 
 .cabecalho {
@@ -39,7 +40,7 @@ body {
 }
 
 .primeiras-informacoes img{
-    margin:15px;
+    margin: 1vh 0 0 0;
 }
 
 .titulo {
@@ -69,11 +70,10 @@ h1 {
 #nome-loja {
     color: #ffffff;
     font-size: 80px;
-    padding: 0px 0px 0px 0px;
 }
 
 .corpo{
-    background-color: #ededed;
+    background-image: linear-gradient(#00000000, #ededed , #ededed, #ededed, #ededed, #ededed,  #00000000);
 }
 
 div.conteudo {
@@ -112,7 +112,7 @@ li {
     margin-left: 20px;
 }
 
-.linha {
+hr {
     width: 100%;
     border: 1px solid #48484894;
 }
@@ -130,6 +130,10 @@ footer {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     padding-bottom: 15px;
+}
+
+footer hr{
+    display: none;
 }
 
 li.social {
@@ -192,8 +196,25 @@ label {
 }
 
 .info-local p {
-
     margin-top: 5px;
     margin-bottom: 5px;
     font-family: sans-serif;
+}
+
+
+@media (max-width:425px) {
+    #nome-loja{
+        font-size: 60px;
+    }
+    .titulo p{
+        font-size: 20px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer hr {
+        display: block;
+        margin: 5vh 0px;
+        width: 100%;
+    }
 }
