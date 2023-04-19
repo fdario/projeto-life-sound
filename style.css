@@ -31,6 +31,11 @@ body {
     font-size: 25px;
 }
 
+#links-internos{
+    display: flex;
+    gap: 6vw;
+}
+
 .primeiras-informacoes {
     display: flex;
     justify-content: space-evenly;
@@ -72,17 +77,14 @@ h1 {
     font-size: 80px;
 }
 
-.corpo{
+.conteudo {
     background-image: linear-gradient(#00000000, #ededed , #ededed, #ededed, #ededed, #ededed,  #00000000);
-}
-
-div.conteudo {
-    padding: 50px 30px 30px 30px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     color: #000;
-    margin-top: 15vh;
+    margin-top: 10vh;
     border-radius: 15px;
 }
 
@@ -151,7 +153,13 @@ div.info-local {
     flex-direction: column;
 }
 
-p.info-local {
+.info-fim p {
+    font-size: 7vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.social p {
+    font-size: 4vh;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -203,6 +211,9 @@ label {
 
 
 @media (max-width:425px) {
+    .conteudo {
+        margin-top: 0vh;
+    }
     #nome-loja{
         font-size: 60px;
     }
