@@ -214,11 +214,11 @@ div.info-local {
     background-color: #484848;
 }
 
-.descricao, .descricao-horario {
-    /* font-family: sans-serif; */
+.descricao{
     margin-top: 5px;
     margin-bottom: 5px;
     font: 2vh Arial, sans-serif;
+    margin: 0.5vh 15px;
 }
 
 .titulo-lista {
